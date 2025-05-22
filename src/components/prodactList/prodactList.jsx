@@ -46,7 +46,7 @@ const ProductList = ({ language }) => {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const response = await fetch('https://greenwall2024-832ac2e5bda7.herokuapp.com/api/products/');
+        const response = await fetch('https://greenwalluz-4a1f8b314ff2.herokuapp.com/api/products/');
         const data = await response.json();
   
         setProducts(data); 

@@ -27,7 +27,7 @@ function Projects({ language }) {
   const fetchProjects = async () => {
     setLoading(true);
     try {
-      const response = await fetch('https://greenwall2024-832ac2e5bda7.herokuapp.com/api/projects/');
+      const response = await fetch('https://greenwalluz-4a1f8b314ff2.herokuapp.com/api/projects/');
       if (!response.ok) {
         throw new Error('Network response was not ok');
       }
