@@ -59,7 +59,7 @@ const AdminApplication = ({ language  }) => {
                     throw new Error("No token found. Please log in again.");
                 }
 
-                const response = await fetch("http://192.168.100.153/api/orders/", {
+                const response = await fetch("https://greenwalluz-4a1f8b314ff2.herokuapp.com/api/orders/", {
                     headers: {
                         Authorization: `Bearer ${token}`,
                     },
@@ -103,7 +103,7 @@ const AdminApplication = ({ language  }) => {
                 return;
             }
 
-            const response = await fetch(`http://192.168.100.153/api/orders/${id}/`, {
+            const response = await fetch(`https://greenwalluz-4a1f8b314ff2.herokuapp.com/api/orders/${id}/`, {
                 method: 'PUT',
                 headers: {
                     'Content-Type': 'application/json',

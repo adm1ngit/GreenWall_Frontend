@@ -81,7 +81,7 @@ const ProjectAdd = ({ language }) => {
     setLoading(true);
 
     try {
-      const response = await axios.post('https://greenwall2024-832ac2e5bda7.herokuapp.com/api/products/', formData, {
+      const response = await axios.post('https://greenwalluz-4a1f8b314ff2.herokuapp.com/api/products/', formData, {
         headers: {
           'Content-Type': 'multipart/form-data',
           'Authorization': `Bearer ${token}`,

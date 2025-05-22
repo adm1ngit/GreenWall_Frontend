@@ -94,7 +94,7 @@ const ProjectPost = ({ language }) => {
     setLoading(true); // Set loading to true before starting the upload
 
     try {
-      const response = await axios.post('https://greenwall2024-832ac2e5bda7.herokuapp.com/api/projects/', formData, {
+      const response = await axios.post('https://greenwalluz-4a1f8b314ff2.herokuapp.com/api/projects/', formData, {
         headers: {
           'Content-Type': 'multipart/form-data',
           'Authorization': `Bearer ${token}`,

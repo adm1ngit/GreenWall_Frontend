@@ -40,7 +40,7 @@ function AdminAddProject({ language }) {
   useEffect(() => {
     const fetchProjects = async () => {
       try {
-        const response = await fetch(`http://192.168.100.153/api/projects/?lang=${language}`);
+        const response = await fetch(`https://greenwalluz-4a1f8b314ff2.herokuapp.com/api/projects/?lang=${language}`);
         if (!response.ok) {
           throw new Error("Network response was not ok");
         }
@@ -62,7 +62,7 @@ function AdminAddProject({ language }) {
     const token = localStorage.getItem('token');
 
     try {
-      const response = await fetch(`http://192.168.100.153/api/projects/${projectId}/`, {
+      const response = await fetch(`https://greenwalluz-4a1f8b314ff2.herokuapp.com/api/projects/${projectId}/`, {
         method: 'DELETE',
         headers: {
           'Authorization': `Bearer ${token}`,

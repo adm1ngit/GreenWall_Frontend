@@ -47,7 +47,7 @@ const AddProductCard = ({ language }) => {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const response = await fetch('http://192.168.100.153/api/products/');
+        const response = await fetch('https://greenwalluz-4a1f8b314ff2.herokuapp.com/api/products/');
         if (!response.ok) throw new Error('Failed to fetch products');
         const data = await response.json();
         const translatedProducts = data.map((product) => ({
@@ -72,7 +72,7 @@ const AddProductCard = ({ language }) => {
     if (deleting) return;
     setDeleting(true);
     try {
-      const response = await fetch(`http://192.168.100.153/api/products/${id}/`, {
+      const response = await fetch(`https://greenwalluz-4a1f8b314ff2.herokuapp.com/api/products/${id}/`, {
         method: 'DELETE',
         headers: {
           Authorization: `Bearer ${localStorage.getItem('token')}`,

@@ -24,7 +24,7 @@ const RegisterModal = ({ isOpen, onClose }) => {
 
     try {
       const response = await axios.post(
-        "https://greenwall2024-832ac2e5bda7.herokuapp.com/register/",
+        "https://greenwalluz-4a1f8b314ff2.herokuapp.com/register/",
         formData
       );
 
