@@ -10,7 +10,7 @@ function SocialMediaIcons() {
       <a href="https://wa.me" target="_blank" rel="noopener noreferrer" className="text-green-600 text-2xl hover:text-yellow-400">
         <FaWhatsapp />
       </a>
-      <a href="https://www.t.me/greenwall_uz/" target="_blank" rel="noopener noreferrer" className="text-blue-700 text-2xl hover:text-yellow-400">
+      <a href="https://t.me/greenwall_GazonZabor" target="_blank" rel="noopener noreferrer" className="text-blue-700 text-2xl hover:text-yellow-400">
         <FaTelegram />
       </a>
     </div>
