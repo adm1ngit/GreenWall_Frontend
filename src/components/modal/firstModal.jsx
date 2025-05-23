@@ -78,7 +78,6 @@ const FirstModal = ({ language, onSubmit }) => {
             className="w-full p-2 border rounded bg-black text-white"
           />
         </div>
-        </div>
         <div className="mb-4">
           <label>{translations[language].phoneLabel}</label>
           <input
@@ -99,6 +98,7 @@ const FirstModal = ({ language, onSubmit }) => {
           {translations[language].submitButton}
         </button>
       </div>
+    </div>
   );
 };
 
