@@ -5,7 +5,7 @@ import Main from "./components/main/Main";
 import SocialMediaIcons from "./components/SocialMedia";
 import ProductList from "./components/prodactList/prodactList";
 import FirstModal from "./components/modal/firstModal";
-import SecondModal from "./components/modal/secondModal";
+// import SecondModal from "./components/modal/secondModal";
 import Login from "./admin/login/login.jsx";
 import AdminHome from "./admin/adminPanel/adminHome.jsx";
 import AdminAddProect from "./admin/adminPanel/AdminAddProect.jsx";
