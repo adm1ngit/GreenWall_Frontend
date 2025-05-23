@@ -1,14 +1,15 @@
-import React, { useState } from "react";
-import Translate from "../assets/translate.png";
-import RegisterModal from "./RegisterModal";
-
 function Header({ language, setLanguage }) {
   const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const translations = {
+    uz: "Kafolat Xati Olish",
+    ru: "Получить Гарантийный Талон",
+    en: "Get Warranty Card",
+  };
 
   return (
     <header className="flex justify-end p-4 z-50 top-0 right-1 md:top-5 md:right-5 absolute">
       <div className="flex items-center flex-col">
-        {/* 🌍 Til tanlash */}
         <img 
           src={Translate} 
           alt="Translate" 
@@ -26,19 +27,15 @@ function Header({ language, setLanguage }) {
         </select>
       </div>
 
-      {/* 🔹 Garantiya Talon Olish Tugmasi (oval shaklda va och yashil rangda) */}
       <button
         onClick={() => setIsModalOpen(true)}
         className="bg-[#50D900] text-[white] px-6 py-3 rounded-full font-medium 
                    hover:bg-[#8CD48A] transition ml-4"
       >
-        Garantiya Talon Olish
+        {translations[language]}
       </button>
 
-      {/* 🔹 Modal oynani chiqarish */}
       <RegisterModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
     </header>
   );
 }
-
-export default Header;

@@ -135,7 +135,7 @@ const translations = {
     no: "No",
   },
   uz: {
-    productName: "Nomi",
+  productName: "Nomi",
   productPrice: "Narx",
   productDescription: "Ma'lumot",
   confirmationMessage: "Ma'lumotlarni jo'natishni xohlaysizmi?",
