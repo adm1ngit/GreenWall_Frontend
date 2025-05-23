@@ -78,15 +78,6 @@ const FirstModal = ({ language, onSubmit }) => {
             className="w-full p-2 border rounded bg-black text-white"
           />
         </div>
-        <div className="mb-4">
-          <label>{translations[language].surnameLabel}</label>
-          <input
-            type="text"
-            value={surname}
-            onChange={(e) => setSurname(e.target.value)}
-            placeholder={translations[language].surnamePlaceholder}
-            className="w-full p-2 border rounded bg-black text-white"
-          />
         </div>
         <div className="mb-4">
           <label>{translations[language].phoneLabel}</label>
@@ -108,7 +99,6 @@ const FirstModal = ({ language, onSubmit }) => {
           {translations[language].submitButton}
         </button>
       </div>
-    </div>
   );
 };
 
