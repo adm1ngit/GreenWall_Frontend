@@ -49,10 +49,8 @@ const translations = {
     button: "Подать заявку",
 
     contactitle: "Свяжитесь с нами",
-    phone2: "Телефон: +998 94 679 47 77",
-    phone1: "Телефон: +998 94 447 37 37",
-    phone: "Телефон: +998 99 875 87 37",
-    email: "Email: khurshidjon@gmail.com",
+    phone: "Телефон: +998 78 113 83 88",
+    email: "Email: greenwalluz@gmail.com",
     address: "Адрес:  Ташкентская область, город Алмалык , ",
 
     footer: "Хотите узнать больше о наших продуктах или заказать консультацию? Свяжитесь с нами по телефону или оставьте заявку, и мы поможем вам создать уникальный зеленый забор для вашего пространства."
@@ -119,10 +117,8 @@ const translations = {
     button: "Submit Application",
 
     contactitle: "Contact Us",
-    phone2: "Phone: +998 94 679 47 77",
-    phone1: "Phone: +998 94 447 37 37",
-    phone: "Phone: +998 99 875 87 37",
-    email: "Email: khurshidjon@gmail.com",
+    phone: "Phone: +998 78 113 83 88",
+    email: "Email: greenwalluz@gmail.com",
     address: "Address: Toshkent , Olmaliq c",
     footer: "Want to learn more about our products or request a consultation? Contact us by phone or leave a request, and we will help you create a unique green fence for your space."
     ,
@@ -190,10 +186,8 @@ const translations = {
       }
     ],
     contactitle: "Biz bilan bog'laning",
-    phone2: "Telefon: +998 94 679 47 77",
-    phone1: "Telefon: +998 94 447 37 37",
-    phone: "Telefon: +998 99 875 87 37",
-    email: "Email: khurshidjon@gmail.com",
+    phone: "Telefon: +998 78 113 83 88",
+    email: "Email: greenwalluz@gmail.com",
     address: "Manzil: Toshkent v, Olmaliq sh",
     footer: "Mahsulotlarimiz haqida ko'proq ma'lumot olish yoki maslahat so'rashni xohlaysizmi? Biz bilan telefon orqali bog'laning yoki ariza qoldiring, va biz sizga o'ziga xos yashil to'siq yaratishga yordam beramiz.",
   
