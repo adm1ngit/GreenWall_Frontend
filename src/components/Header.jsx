@@ -1,3 +1,7 @@
+import React, { useState } from "react";
+import Translate from "../assets/translate.png";
+import RegisterModal from "./RegisterModal";
+
 function Header({ language, setLanguage }) {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
@@ -39,3 +43,4 @@ function Header({ language, setLanguage }) {
     </header>
   );
 }
+export default Header;
