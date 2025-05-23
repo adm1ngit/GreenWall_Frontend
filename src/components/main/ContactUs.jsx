@@ -4,7 +4,7 @@ import translations from './translations'; // Import the translations
 
 const Contact = ({ language }) => { // Accept language as a prop
   // Get the translations based on the selected language
-  const { contactitle, phone, phone1, phone2, email, address } = translations[language];
+  const { contactitle, phone, email, address } = translations[language];
 
   return (
     <section className="bg-[#0C4840]">
@@ -23,18 +23,6 @@ const Contact = ({ language }) => { // Accept language as a prop
           <div className="flex items-center justify-start m-2">
             <div className="flex items-center justify-center w-6 h-6 bg-white rounded-full">
               <FaPhoneAlt className="text-[#0C4840] text-sm" />
-            </div>
-            <p className="ml-2">{phone1}</p>
-          </div>
-          <div className="flex items-center justify-start m-2">
-            <div className="flex items-center justify-center w-6 h-6 bg-white rounded-full">
-              <FaPhoneAlt className="text-[#0C4840] text-sm" />
-            </div>
-            <p className="ml-2">{phone2}</p>
-          </div>
-          <div className="flex items-center justify-start m-2">
-            <div className="flex items-center justify-center w-6 h-6 bg-white rounded-full">
-              <FaEnvelope className="text-[#0C4840] text-sm" />
             </div>
             <p className="ml-2">{email}</p>
           </div>
