@@ -24,7 +24,7 @@ function App() {
   }, [language]);
 
   const onSubmit = (userData) => {
-    localStorage.setItem("token", userData.token);
+    localStorage.setItem("token", userData.token || "user-token");
     setIsAuthenticated(true);
   };
 
@@ -37,16 +37,57 @@ function App() {
         <Route path="/" element={<Main language={language} setLanguage={setLanguage} />} />
         <Route path="/product" element={<ProductList language={language} />} />
         <Route path="/product/first" element={<FirstModal language={language} onSubmit={onSubmit} />} />
-        <Route path="/product/second" element={<SecondModal language={language} />} />
         <Route path="/login" element={<Login onSubmit={onSubmit} setIsAuthenticated={setIsAuthenticated} />} />
 
-        {/* Protected Routes */}
-        <Route path="/home" element={<PrivateRoute isAuthenticated={isAuthenticated}><AdminHome language={language} /></PrivateRoute>} />
-        <Route path="/home/adminAddProduct" element={<PrivateRoute isAuthenticated={isAuthenticated}><AdminAddProduct language={language} /></PrivateRoute>} />
-        <Route path="/home/adminAddProect" element={<PrivateRoute isAuthenticated={isAuthenticated}><AdminAddProect language={language} /></PrivateRoute>} />
-        <Route path="/home/adminAplicatipon" element={<PrivateRoute isAuthenticated={isAuthenticated}><AdminAplicatipon language={language} /></PrivateRoute>} />
-        <Route path="/home/adminAddProect/proectExample" element={<PrivateRoute isAuthenticated={isAuthenticated}><ProectPost language={language} /></PrivateRoute>} />
-        <Route path="/home/adminAddProduct/productAdd" element={<PrivateRoute isAuthenticated={isAuthenticated}><ProductAdd language={language}/></PrivateRoute>} />
+        {/* 🔐 Protected Routes */}
+        <Route
+          path="/home"
+          element={
+            <PrivateRoute isAuthenticated={isAuthenticated}>
+              <AdminHome language={language} />
+            </PrivateRoute>
+          }
+        />
+        <Route
+          path="/home/adminAddProduct"
+          element={
+            <PrivateRoute isAuthenticated={isAuthenticated}>
+              <AdminAddProduct language={language} />
+            </PrivateRoute>
+          }
+        />
+        <Route
+          path="/home/adminAddProect"
+          element={
+            <PrivateRoute isAuthenticated={isAuthenticated}>
+              <AdminAddProect language={language} />
+            </PrivateRoute>
+          }
+        />
+        <Route
+          path="/home/adminAplicatipon"
+          element={
+            <PrivateRoute isAuthenticated={isAuthenticated}>
+              <AdminAplicatipon language={language} />
+            </PrivateRoute>
+          }
+        />
+        <Route
+          path="/home/adminAddProect/proectExample"
+          element={
+            <PrivateRoute isAuthenticated={isAuthenticated}>
+              <ProectPost language={language} />
+            </PrivateRoute>
+          }
+        />
+        <Route
+          path="/home/adminAddProduct/productAdd"
+          element={
+            <PrivateRoute isAuthenticated={isAuthenticated}>
+              <ProductAdd language={language} />
+            </PrivateRoute>
+          }
+        />
       </Routes>
     </div>
   );
