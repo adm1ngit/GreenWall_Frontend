@@ -35,6 +35,7 @@ const FirstModal = ({ language }) => {
         });
 
         if (response.ok) {
+          console.log("Success");
           navigate("/");
         } else {
           const errorData = await response.json();
