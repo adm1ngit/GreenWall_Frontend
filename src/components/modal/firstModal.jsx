@@ -35,8 +35,8 @@ const FirstModal = ({ language }) => {
         });
 
         if (response.ok) {
-          console.log("Success");
-          navigate("/");
+          alert("Success");  // ✅ Alert bilan xabar
+          navigate("/");     // ✅ Home sahifaga yo‘naltirish
         } else {
           const errorData = await response.json();
           console.error("Server error:", errorData);
