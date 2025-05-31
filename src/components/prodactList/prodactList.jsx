@@ -161,7 +161,7 @@ const ProductList = ({ language }) => {
                   </button>
                 )}
               </div>
-              <p className="text-green-600 font-bold">${t.price}</p>
+              <p className="text-green-600 font-bold">{t.price}</p>
             </div>
           );
         })}

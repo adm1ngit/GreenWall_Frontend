@@ -11,8 +11,8 @@ const ProductModal = ({ product, onClose }) => {
       <div className="bg-white p-6 rounded-lg shadow-lg max-w-lg w-full">
         <h2 className="text-2xl font-bold mb-4">{product.name}</h2>
         <p className="mb-4">{product.description}</p>
-        <p className="mb-4 font-semibold">Price: ${product.price}</p>
-        <p className="mb-4">Price per sqm: ${product.pricePerSqm}</p>
+        <p className="mb-4 font-semibold">Price: {product.price}</p>
+        <p className="mb-4">Price per sqm: {product.pricePerSqm}</p>
 
         <button
           className="bg-green-500 text-white py-2 px-4 rounded hover:bg-green-600"

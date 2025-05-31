@@ -3,9 +3,9 @@ import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
 import { Link } from "react-router-dom";
 
 const content = {
-  ru: { title: "Ассортимент ", span: "Green Wall", buttonText: "Подать Заявку" },
-  en: { title: "Assortment ", span: "Green Wall", buttonText: "Submit Request" },
-  uz: { title: "Assortiment ", span: "Green Wall", buttonText: "Ariza Yuboring" },
+  ru: { title: "Ассортимент ", span: "Green Wall"},
+  en: { title: "Assortment ", span: "Green Wall"},
+  uz: { title: "Assortiment ", span: "Green Wall"},
 };
 
 function Assortment({ language = "ru" }) {
