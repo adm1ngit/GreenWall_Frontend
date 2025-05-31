@@ -61,12 +61,12 @@ function Assortment({ language = "ru" }) {
                 ))}
             </div>
             
-            <Link to="/product">
+            {/* <Link to="/product">
               <button className="md:mt-5 mt-4 bg-[#50D900] hover:bg-[#6dc53b] text-white py-2 px-8 rounded-full flex items-center">
                 {content[language].buttonText}
                 <FaArrowRight className="ml-2 text-xl" />
               </button>
-            </Link>
+            </Link> */}
           </div>
 
           {/* Image Section */}
