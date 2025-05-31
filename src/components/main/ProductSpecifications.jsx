@@ -87,10 +87,10 @@ const ProductSpecifications = ({ language = 'ru' }) => {
       ([entry]) => {
         if (entry.isIntersecting) {
           setInView(true);
-          observer.disconnect(); // Stop observing after it comes into view
+          observer.disconnect();
         }
       },
-      { threshold: 0.1 } // Adjust the threshold as needed
+      { threshold: 0.1 }
     );
 
     if (sectionRef.current) {
@@ -104,7 +104,6 @@ const ProductSpecifications = ({ language = 'ru' }) => {
     };
   }, []);
 
-  // Animation variants
   const variants = {
     hidden: { opacity: 0, y: 40 },
     visible: { opacity: 1, y: 0 }
@@ -113,11 +112,6 @@ const ProductSpecifications = ({ language = 'ru' }) => {
   return (
     <section className='bg-white relative' ref={sectionRef}>
       <div className="container mx-auto md:px-24 px-5 py-10 text-[#0C4840] relative">
-        {/* Mesh Specifications Section */}
-        {/* <div className="absolute md:left-[400px] left-[50px] top-1/3 transform -translate-y-1/2 w-[40px] h-[80px] bg-[#27A800] rounded-tl-full rounded-bl-full"></div>
-        <div className="absolute md:-right-10 -right-24 top-1/2 transform -translate-x-44 w-[60px] h-[120px] rotate-360 bg-[#12A757] rounded-tr-full rounded-br-full"></div>
-        <div className="absolute md:left-[550px] left-[50px] top-3/4 transform -translate-y-1/2 -rotate-[75deg] w-[40px] h-[80px] bg-[#12A757] rounded-tl-full rounded-bl-full"></div> */}
-
         <div className='relative'>
           <motion.h2
             className="text-[#0C4840] text-2xl md:text-2xl text-center font-bold mb-5"
@@ -128,23 +122,34 @@ const ProductSpecifications = ({ language = 'ru' }) => {
           >
             {title1}
           </motion.h2>
+
           <motion.ul
             className="grid grid-cols-1 md:grid-cols-2 gap-4 text-[#0C4840] list-none"
             initial="hidden"
             animate={inView ? "visible" : "hidden"}
             variants={variants}
-            transition={{ duration: 1.5, delay: 0.5  }} // Adding delay for a staggered effect
+            transition={{ duration: 1.5, delay: 0.5 }}
           >
             {specs1.map((item, index) => (
-              <motion.li key={index} className="flex items-start space-x-3 " initial="hidden" animate={inView ? "visible" : "hidden"} variants={variants} transition={{ duration: 0.5, delay: 0.2 * index }}>
-                <span className="text-white rounded-full bg-[#0C4840] w-6 h-6 text-center text-sm flex items-center justify-center">ℹ️</span>
-                <span className='text-xl font-medium'>{item}</span>
+              <motion.li
+                key={index}
+                className="flex items-start space-x-3"
+                initial="hidden"
+                animate={inView ? "visible" : "hidden"}
+                variants={variants}
+                transition={{ duration: 0.5, delay: 0.2 * index }}
+              >
+                <img
+                  src="/assets/greenwall.jpg"
+                  alt="info"
+                  className="w-6 h-6 rounded-full object-cover"
+                />
+                <span className="text-xl font-medium">{item}</span>
               </motion.li>
             ))}
           </motion.ul>
         </div>
 
-        {/* Coating Specifications Section */}
         <div>
           <motion.h2
             className="text-[#0C4840] text-xl md:text-2xl text-center font-bold mt-10 mb-5 relative"
@@ -155,17 +160,29 @@ const ProductSpecifications = ({ language = 'ru' }) => {
           >
             {title2}
           </motion.h2>
+
           <motion.ul
             className="grid grid-cols-1 md:grid-cols-2 gap-4 text-[#0C4840] list-none relative"
             initial="hidden"
             animate={inView ? "visible" : "hidden"}
             variants={variants}
-            transition={{ duration: 1.5, delay: 0.5 }} // Adding delay for a staggered effect
+            transition={{ duration: 1.5, delay: 0.5 }}
           >
             {specs2.map((item, index) => (
-              <motion.li key={index} className="flex items-start space-x-3" initial="hidden" animate={inView ? "visible" : "hidden"} variants={variants} transition={{ duration: 0.5, delay: 0.2 * index }}>
-                <span className="text-white rounded-full bg-[#0C4840] w-6 h-6 text-center text-sm flex items-center justify-center">ℹ️</span>
-                <span className='text-xl font-medium'>{item}</span>
+              <motion.li
+                key={index}
+                className="flex items-start space-x-3"
+                initial="hidden"
+                animate={inView ? "visible" : "hidden"}
+                variants={variants}
+                transition={{ duration: 0.5, delay: 0.2 * index }}
+              >
+                <img
+                  src="/assets/greenwall.jpg"
+                  alt="info"
+                  className="w-6 h-6 rounded-full object-cover"
+                />
+                <span className="text-xl font-medium">{item}</span>
               </motion.li>
             ))}
           </motion.ul>
