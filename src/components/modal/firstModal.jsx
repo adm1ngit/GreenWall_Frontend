@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
-import translations from '../main/translations';
+import translations from "../main/translations";
 
-const FirstModal = ({ language, onSubmit }) => {
+const FirstModal = ({ language }) => {
   const { state } = useLocation();
   const navigate = useNavigate();
   const [name, setName] = useState("");
@@ -22,16 +22,32 @@ const FirstModal = ({ language, onSubmit }) => {
     }
   };
 
-  const handleSubmit = () => {
+  const handleSubmit = async () => {
     if (name && isPhoneValid) {
       const userData = { name, phone };
-      onSubmit(userData);
-      navigate("/");
+      try {
+        const response = await fetch("https://greenwalluz-4a1f8b314ff2.herokuapp.com/api/submit/", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(userData),
+        });
+
+        if (response.ok) {
+          navigate("/");
+        } else {
+          const errorData = await response.json();
+          console.error("Server error:", errorData);
+        }
+      } catch (error) {
+        console.error("Error submitting data:", error);
+      }
     }
   };
 
   const handleKeyDown = (e) => {
-    if (e.key === 'Enter') {
+    if (e.key === "Enter") {
       handleSubmit();
     }
   };
@@ -63,7 +79,9 @@ const FirstModal = ({ language, onSubmit }) => {
           />
         </div>
         <button
-          className={`bg-green-500 text-white px-4 py-2 rounded w-full ${!(name && isPhoneValid) ? 'opacity-50 cursor-not-allowed' : ''}`}
+          className={`bg-green-500 text-white px-4 py-2 rounded w-full ${
+            !(name && isPhoneValid) ? "opacity-50 cursor-not-allowed" : ""
+          }`}
           onClick={handleSubmit}
           disabled={!(name && isPhoneValid)}
         >
