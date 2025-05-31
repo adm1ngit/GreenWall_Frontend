@@ -17,9 +17,17 @@ const content = {
   },
   uz: {
     title: "Nima uchun bizni tanlashadi?",
-    eco: "Ekologik toza: Faqat tabiiy va xavfsiz materiallardan foydalanamiz.",
-    durability: "Uzoq muddatli: Green Wall panjaralari o'zining jozibasini saqlab qoladi...",
-    variety: "Ko'p qirralilik: Turli xil foydalanish turlari uchun mos keladi...",
+    eco: "Quyosh nuri, issiq, sovuq, shamol va namlikdan qo‘rqmaydi...",
+    eco: "Asosini bo‘yash va tekislash shart emas...",
+    eco: "Sun’iy maysani parvarishlash shart emas...",
+    eco: "Shu rangda yamoq tikib qo‘yish mumkin...",
+    durability: "Oson demontaj qilinadi...",
+    durability: "Qoplamani olib, boshqa joyga o‘tkazish mumkin...",   
+    durability: "Qishda ham jozibadorlikni saqlaydi...",
+    durability: "Ikki tomonlama zamonaviy ko‘rinishga ega...",
+    variety: "Oddiy ta’mirlash mumkin...",
+    variety: "Shikastlanganda oson tuzatish mumkin...",
+    variety: "Har qanday devor nuqsonlarini yashiradi...",
   },
 };
 
