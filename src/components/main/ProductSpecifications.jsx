@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { motion } from 'framer-motion';
-
+import info from "../../assets/greenwall.jpg";
 const data = {
   ru: {
     title1: 'ХАРАКТЕРИСТИКА СЕТКИ:',
@@ -140,7 +140,7 @@ const ProductSpecifications = ({ language = 'ru' }) => {
                 transition={{ duration: 0.5, delay: 0.2 * index }}
               >
                 <img
-                  src="/assets/greenwall.jpg"
+                  src={info}
                   alt="info"
                   className="w-6 h-6 rounded-full object-cover"
                 />
@@ -178,7 +178,7 @@ const ProductSpecifications = ({ language = 'ru' }) => {
                 transition={{ duration: 0.5, delay: 0.2 * index }}
               >
                 <img
-                  src="/assets/greenwall.jpg"
+                  src={info}
                   alt="info"
                   className="w-6 h-6 rounded-full object-cover"
                 />
