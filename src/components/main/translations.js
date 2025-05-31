@@ -51,7 +51,7 @@ const translations = {
     contactitle: "Свяжитесь с нами",
     phone: "Телефон: +998 78 113 83 88",
     email: "Email: greenwalluz@gmail.com",
-    address: "Адрес:  Ташкентская область, город Алмалык , ",
+    address: "Адрес:  Ташкент, Яшнабадский район, улица Максумкули, дом 119",
 
     footer: "Хотите узнать больше о наших продуктах или заказать консультацию? Свяжитесь с нами по телефону или оставьте заявку, и мы поможем вам создать уникальный зеленый забор для вашего пространства."
     ,
@@ -119,7 +119,7 @@ const translations = {
     contactitle: "Contact Us",
     phone: "Phone: +998 78 113 83 88",
     email: "Email: greenwalluz@gmail.com",
-    address: "Address: Toshkent , Olmaliq c",
+    address: "Address: Tashkent, Yashnabad district, Maxtumquli street, 119 house",
     footer: "Want to learn more about our products or request a consultation? Contact us by phone or leave a request, and we will help you create a unique green fence for your space."
     ,
     productName: "Name",
@@ -188,7 +188,7 @@ const translations = {
     contactitle: "Biz bilan bog'laning",
     phone: "Telefon: +998 78 113 83 88",
     email: "Email: greenwalluz@gmail.com",
-    address: "Manzil: Toshkent v, Olmaliq sh",
+    address: "Manzil: Toshkent shahri, Yashnobod tumani, Maxtumquli ko‘chasi, 119-uy",
     footer: "Mahsulotlarimiz haqida ko'proq ma'lumot olish yoki maslahat so'rashni xohlaysizmi? Biz bilan telefon orqali bog'laning yoki ariza qoldiring, va biz sizga o'ziga xos yashil to'siq yaratishga yordam beramiz.",
   
   },
