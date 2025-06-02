@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import axios from "axios";
-import translate from "./main/translate";
+import translations from "./main/translate";  // Sizning tarjima faylingiz
 
 const RegisterModal = ({ isOpen, onClose, language = "uz" }) => {
-  const t = translate[language];
+  const t = translations[language];
 
   const [formData, setFormData] = useState({
     name: "",
@@ -57,13 +57,13 @@ const RegisterModal = ({ isOpen, onClose, language = "uz" }) => {
   if (!isOpen) return null;
 
   return (
-    <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center">
+    <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50">
       <div className="bg-[#1a1a1a] p-6 rounded-lg w-96">
         <h2 className="text-xl font-bold text-[#f1f1f1] text-center mb-4">
           {t.title}
         </h2>
 
-        {error && <p className="text-red-500 text-center">{error}</p>}
+        {error && <p className="text-red-500 text-center mb-3">{error}</p>}
 
         <form onSubmit={handleSubmit} className="space-y-3">
           <input
