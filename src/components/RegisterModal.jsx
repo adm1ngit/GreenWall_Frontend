@@ -11,12 +11,10 @@ const RegisterModal = ({ isOpen, onClose }) => {
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
 
-  // 📌 Inputlarni o‘zgartirish funksiyasi
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  // 📤 Backendga so‘rov yuborish va PDF yuklash
   const handleSubmit = async (e) => {
     e.preventDefault();
     setLoading(true);
@@ -28,15 +26,10 @@ const RegisterModal = ({ isOpen, onClose }) => {
         formData
       );
 
-      console.log("✅ Backend javobi:", response.data); // 📌 PDF URL tekshirish
-
       if (response.status === 201) {
         const { pdf_url } = response.data;
 
         if (pdf_url) {
-          console.log("📥 PDF yuklanmoqda:", pdf_url); // 📌 Konsolda tekshirish
-
-          // 📥 PDF avtomatik yuklab olinadi
           const link = document.createElement("a");
           link.href = pdf_url;
           link.download = "warranty_card.pdf";
@@ -44,12 +37,11 @@ const RegisterModal = ({ isOpen, onClose }) => {
           link.click();
           document.body.removeChild(link);
         } else {
-          console.error("❌ PDF URL mavjud emas!");
           setError("PDF yuklab olishda xatolik yuz berdi.");
         }
 
         alert("Ro‘yxatdan o‘tish muvaffaqiyatli!");
-        onClose(); // ✅ Modalni yopish
+        onClose();
       }
     } catch (error) {
       console.error("❌ Xatolik:", error);
@@ -77,7 +69,7 @@ const RegisterModal = ({ isOpen, onClose }) => {
             placeholder="Ism"
             value={formData.name}
             onChange={handleChange}
-            className="w-full p-2 border border-gray-300 rounded"
+            className="w-full p-2 border border-gray-300 rounded text-black"
             required
           />
           <input
@@ -86,7 +78,7 @@ const RegisterModal = ({ isOpen, onClose }) => {
             placeholder="Familiya"
             value={formData.surname}
             onChange={handleChange}
-            className="w-full p-2 border border-gray-300 rounded"
+            className="w-full p-2 border border-gray-300 rounded text-black"
             required
           />
           <input
@@ -95,7 +87,7 @@ const RegisterModal = ({ isOpen, onClose }) => {
             placeholder="Telefon"
             value={formData.phone}
             onChange={handleChange}
-            className="w-full p-2 border border-gray-300 rounded"
+            className="w-full p-2 border border-gray-300 rounded text-black"
             required
           />
           <input
@@ -104,7 +96,7 @@ const RegisterModal = ({ isOpen, onClose }) => {
             placeholder="Manzil"
             value={formData.address}
             onChange={handleChange}
-            className="w-full p-2 border border-gray-300 rounded"
+            className="w-full p-2 border border-gray-300 rounded text-black"
             required
           />
 
