@@ -17,7 +17,7 @@ const content = {
   uz: {
     title: "Haqida",
     span: "Green Wall ",
-    description: "Yashil devor har bir mulkka o'ziga xos va tabiiy ko'rinish beradigan dekorativ yashil to'siqlarni yaratishda etakchi hisoblanadi. Biz estetika va funksionallikni birlashtirgan obodonlashtirish va bezash uchun innovatsion echimlarni taklif qilamiz. Bizning vazifamiz sizga uyingiz yoki ofisingizning har bir burchagida qulaylik va qulaylik yaratishga yordam berishdir.",
+    description: "Yashil devor har bir mulkka o'ziga xos va tabiiy ko'rinish beradigan dekorativ yashil to'siqlarni yaratishda yetakchi hisoblanadi. Biz estetika va funksionallikni birlashtirgan obodonlashtirish va bezash uchun innovatsion yechimlarni taklif qilamiz. Bizning vazifamiz sizga uyingiz yoki ofisingizning har bir burchagida qulaylik yaratishga yordam berishdir.",
   },
 };
 
