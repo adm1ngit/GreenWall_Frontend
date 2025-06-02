@@ -44,26 +44,20 @@ const translations = {
         content: "Описание этапа 5: Монтаж сетки с декоративным покрытием."
       }
     ],
-
     colltitle: "Оставляйте заявку прямо сейчас!",
     button: "Подать заявку",
-
     contactitle: "Свяжитесь с нами",
     phone: "Телефон: +998 78 113 83 88",
     email: "Email: greenwalluz@gmail.com",
     address: "Адрес:  Ташкент,  Яшнабадский район, улица Махтумкули, дом 119",
-
-    footer: "Хотите узнать больше о наших продуктах или заказать консультацию? Свяжитесь с нами по телефону или оставьте заявку, и мы поможем вам создать уникальный зеленый забор для вашего пространства."
-    ,
+    footer: "Хотите узнать больше о наших продуктах или заказать консультацию? Свяжитесь с нами по телефону или оставьте заявку, и мы поможем вам создать уникальный зеленый забор для вашего пространства.",
     productName: "Имена",
     productPrice: "Цена",
     productDescription: "Информация",
-    confirmationTitle: "Tasdiqlash",
     confirmationTitle: "Подтверждение",
     confirmationMessage: "Вы хотите отправить данные?",
     yes: "Да",
     no: "Нет",
-
   },
   en: {
     productListTitle: "Product List",
@@ -80,16 +74,13 @@ const translations = {
     submitButton: "Submit",
     confirmButton: "Submit",
     totalPriceLabel: "Total price for square meters: ",
-
     title: "Completed Projects",
     description: "Description for the project.",
-
     wyUsTitle: "Why We Are Recommended?",
     years_in_market: "years in the market!",
     satisfied_clients: "satisfied clients!",
     installed_items_km: "installed fences!",
     work_all_days: "days for all works!",
-
     workStepstitle: "HOW WE WORK?",
     workStepsitems: [
       {
@@ -115,13 +106,11 @@ const translations = {
     ],
     colltitle: "Leave applications right now!",
     button: "Submit Application",
-
     contactitle: "Contact Us",
     phone: "Phone: +998 78 113 83 88",
     email: "Email: greenwalluz@gmail.com",
     address: "Address: Tashkent, Yashnabad district, Maxtumquli street, 119 house",
-    footer: "Want to learn more about our products or request a consultation? Contact us by phone or leave a request, and we will help you create a unique green fence for your space."
-    ,
+    footer: "Want to learn more about our products or request a consultation? Contact us by phone or leave a request, and we will help you create a unique green fence for your space.",
     productName: "Name",
     productPrice: "Price",
     productDescription: "Description",
@@ -131,16 +120,9 @@ const translations = {
     no: "No",
   },
   uz: {
-  productName: "Nomi",
-  productPrice: "Narx",
-  productDescription: "Ma'lumot",
-  confirmationMessage: "Ma'lumotlarni jo'natishni xohlaysizmi?",
-  yes: "Ha",
-  no: "Yo'q",
     productListTitle: "Mahsulotlar ro'yxati",
     previous: "Oldingi",
     next: "Keyingi",
-
     modalTitle: "Quyidagi maydonlarni to'ldiring",
     nameLabel: "Ismingiz",
     surnameLabel: "Familiyangiz",
@@ -159,9 +141,6 @@ const translations = {
     satisfied_clients: "Mijozlar",
     installed_items_km: "O'rnatilgan buyumlar (km)",
     work_all_days: "Har kuni ishlash",
-    colltitle: "Hozirda arizalar qoldiring!",
-    button: "Ariza berish",
-
     workStepstitle: "QANDAY ISHLAYMIZ?",
     workStepsitems: [
       {
@@ -185,53 +164,21 @@ const translations = {
         content: "Beshinchi bosqich: Dekorativ qoplamali panjarani o'rnatish."
       }
     ],
+    colltitle: "Hozirda arizalar qoldiring!",
+    button: "Ariza berish",
     contactitle: "Biz bilan bog'laning",
     phone: "Telefon: +998 78 113 83 88",
     email: "Email: greenwalluz@gmail.com",
     address: "Manzil: Toshkent shahri, Yashnobod tumani, Maxtumquli ko‘chasi, 119-uy",
     footer: "Mahsulotlarimiz haqida ko'proq ma'lumot olish yoki maslahat so'rashni xohlaysizmi? Biz bilan telefon orqali bog'laning yoki ariza qoldiring, va biz sizga o'ziga xos yashil to'siq yaratishga yordam beramiz.",
-  
-  },
-
-  uz: {
-    title: "Ro‘yxatdan o‘tish",
-    name: "Ism",
-    surname: "Familiya",
-    phone: "Telefon",
-    address: "Manzil",
-    submit: "So‘rov Yuborish",
-    submitting: "Yuborilmoqda...",
-    close: "Yopish",
-    error_pdf: "PDF yuklab olishda xatolik yuz berdi.",
-    success: "Ro‘yxatdan o‘tish muvaffaqiyatli!",
-    error_generic: "Xatolik yuz berdi, ma’lumotlarni tekshirib qaytadan urinib ko‘ring.",
-  },
-  ru: {
-    title: "Регистрация",
-    name: "Имя",
-    surname: "Фамилия",
-    phone: "Телефон",
-    address: "Адрес",
-    submit: "Отправить запрос",
-    submitting: "Отправка...",
-    close: "Закрыть",
-    error_pdf: "Ошибка при загрузке PDF.",
-    success: "Регистрация прошла успешно!",
-    error_generic: "Произошла ошибка, пожалуйста, проверьте данные и попробуйте снова.",
-  },
-  en: {
-    title: "Registration",
-    name: "First Name",
-    surname: "Last Name",
-    phone: "Phone",
-    address: "Address",
-    submit: "Submit Request",
-    submitting: "Submitting...",
-    close: "Close",
-    error_pdf: "Error downloading PDF.",
-    success: "Registration successful!",
-    error_generic: "An error occurred. Please check your input and try again.",
-
-  },
+    productName: "Nomi",
+    productPrice: "Narx",
+    productDescription: "Ma'lumot",
+    confirmationTitle: "Tasdiqlash",
+    confirmationMessage: "Ma'lumotlarni jo'natishni xohlaysizmi?",
+    yes: "Ha",
+    no: "Yo'q",
+  }
 };
+
 export default translations;
