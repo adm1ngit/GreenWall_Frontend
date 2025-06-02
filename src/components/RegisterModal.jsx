@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
-import translations from "./translations"; // 🔁 Qo‘shildi
+import translations from "./main/translations";
 
 const RegisterModal = ({ isOpen, onClose, language = "uz" }) => {
   const t = translations[language]; // 🔄 Tarjima tanlovi
