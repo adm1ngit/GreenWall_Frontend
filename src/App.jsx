@@ -13,6 +13,7 @@ import AdminAplicatipon from "./admin/adminPanel/AdminAplicatipon.jsx";
 import ProectPost from "./admin/adminPanel/ProectPost.jsx";
 import ProductAdd from "./admin/adminPanel/ProductAdd.jsx";
 import PrivateRoute from "./admin/login/PrivateRoute.jsx";
+
 function App() {
   const [language, setLanguage] = useState(localStorage.getItem("language") || "ru");
   const [isAuthenticated, setIsAuthenticated] = useState(!!localStorage.getItem("token"));
