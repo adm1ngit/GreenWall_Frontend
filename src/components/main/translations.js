@@ -58,6 +58,16 @@ const translations = {
     confirmationMessage: "Вы хотите отправить данные?",
     yes: "Да",
     no: "Нет",
+
+    register: "Регистрация",
+    name: "Имя",
+    surname: "Фамилия",
+    submit: "Отправить запрос",
+    submitting: "Отправляется...",
+    close: "Закрыть",
+    success: "Регистрация прошла успешно!",
+    error: "Произошла ошибка, проверьте данные и попробуйте снова.",
+    pdfError: "Ошибка при загрузке PDF.",
   },
   en: {
     productListTitle: "Product List",
@@ -118,6 +128,16 @@ const translations = {
     confirmationMessage: "Do you want to submit the data?",
     yes: "Yes",
     no: "No",
+
+    register: "Register",
+    name: "First Name",
+    surname: "Last Name",
+    submit: "Submit Request",
+    submitting: "Submitting...",
+    close: "Close",
+    success: "Registration successful!",
+    error: "An error occurred. Please check your information and try again.",
+    pdfError: "Error occurred while downloading the PDF.",
   },
   uz: {
     productListTitle: "Mahsulotlar ro'yxati",
@@ -178,6 +198,16 @@ const translations = {
     confirmationMessage: "Ma'lumotlarni jo'natishni xohlaysizmi?",
     yes: "Ha",
     no: "Yo'q",
+
+    register: "Ro‘yxatdan o‘tish",
+    name: "Ism",
+    surname: "Familiya",
+    submit: "So'rov yuborish",
+    submitting: "Yuborilmoqda...",
+    close: "Yopish",
+    success: "Ro‘yxatdan o‘tish muvaffaqiyatli!",
+    error: "Xatolik yuz berdi, ma’lumotlarni tekshirib qaytadan urinib ko‘ring.",
+    pdfError: "PDF yuklab olishda xatolik yuz berdi.",
   }
 };
 
