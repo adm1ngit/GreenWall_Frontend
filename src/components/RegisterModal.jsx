@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
-import translations from "./main/translate";  // Sizning tarjima faylingiz
+import translations from "./main/translate";
 
 const RegisterModal = ({ isOpen, onClose, language = "uz" }) => {
   const t = translations[language];
