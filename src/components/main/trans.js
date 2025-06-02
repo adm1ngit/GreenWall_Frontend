@@ -9,3 +9,5 @@ const translations = {
       alert_title: "Success"
     }
 }
+
+export default translations;
