@@ -55,8 +55,8 @@ const RegisterModal = ({ isOpen, onClose }) => {
 
   return (
     <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center">
-      <div className="bg-white p-6 rounded-lg w-96">
-        <h2 className="text-xl font-bold text-[#0C4840] text-center mb-4">
+      <div className="bg-[#1a1a1a] p-6 rounded-lg w-96">
+        <h2 className="text-xl font-bold text-[#f1f1f1] text-center mb-4">
           Ro‘yxatdan o‘tish
         </h2>
 
@@ -69,7 +69,7 @@ const RegisterModal = ({ isOpen, onClose }) => {
             placeholder="Ism"
             value={formData.name}
             onChange={handleChange}
-            className="w-full p-2 border border-gray-300 rounded text-black"
+            className="w-full p-2 border border-gray-600 rounded bg-transparent text-[#f1f1f1] placeholder-gray-400"
             required
           />
           <input
@@ -78,7 +78,7 @@ const RegisterModal = ({ isOpen, onClose }) => {
             placeholder="Familiya"
             value={formData.surname}
             onChange={handleChange}
-            className="w-full p-2 border border-gray-300 rounded text-black"
+            className="w-full p-2 border border-gray-600 rounded bg-transparent text-[#f1f1f1] placeholder-gray-400"
             required
           />
           <input
@@ -87,7 +87,7 @@ const RegisterModal = ({ isOpen, onClose }) => {
             placeholder="Telefon"
             value={formData.phone}
             onChange={handleChange}
-            className="w-full p-2 border border-gray-300 rounded text-black"
+            className="w-full p-2 border border-gray-600 rounded bg-transparent text-[#f1f1f1] placeholder-gray-400"
             required
           />
           <input
@@ -96,13 +96,13 @@ const RegisterModal = ({ isOpen, onClose }) => {
             placeholder="Manzil"
             value={formData.address}
             onChange={handleChange}
-            className="w-full p-2 border border-gray-300 rounded text-black"
+            className="w-full p-2 border border-gray-600 rounded bg-transparent text-[#f1f1f1] placeholder-gray-400"
             required
           />
 
           <button
             type="submit"
-            className="bg-green-500 text-white w-full p-2 rounded hover:bg-green-600 transition"
+            className="bg-green-600 text-white w-full p-2 rounded hover:bg-green-700 transition"
             disabled={loading}
           >
             {loading ? "Yuborilmoqda..." : "So'rov Yuborish"}
@@ -111,7 +111,7 @@ const RegisterModal = ({ isOpen, onClose }) => {
 
         <button
           onClick={onClose}
-          className="mt-3 w-full bg-gray-300 p-2 rounded hover:bg-gray-400 transition"
+          className="mt-3 w-full bg-gray-500 text-white p-2 rounded hover:bg-gray-600 transition"
         >
           Yopish
         </button>
