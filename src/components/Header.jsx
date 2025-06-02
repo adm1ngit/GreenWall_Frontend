@@ -39,7 +39,8 @@ function Header({ language, setLanguage }) {
         {translations[language]}
       </button>
 
-      <RegisterModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
+      <RegisterModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)}
+      language={language} />
     </header>
   );
 }
