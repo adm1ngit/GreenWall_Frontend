@@ -38,6 +38,16 @@ const translations = {
       error_pdf: "PDF link not found.",
       error_generic: "An error occurred. Please try again.",
     },
+
+    uz: {
+      alert_title: "Muvofaqqiyatli"
+    },
+    ru: {
+      alert_title: "Успешно"
+    },
+    en: {
+      alert_title: "Success"
+    }
   };
   
   export default translations;

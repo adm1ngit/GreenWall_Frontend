@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import translations from "../main/translations";
+import translate from "../main/translate";
 
 const FirstModal = ({ language }) => {
   const { state } = useLocation();
@@ -35,8 +36,8 @@ const FirstModal = ({ language }) => {
         });
 
         if (response.ok) {
-          alert("Success");  // ✅ Alert bilan xabar
-          navigate("/");     // ✅ Home sahifaga yo‘naltirish
+          alert(translate[language].alert_title);
+          navigate("/");
         } else {
           const errorData = await response.json();
           console.error("Server error:", errorData);
