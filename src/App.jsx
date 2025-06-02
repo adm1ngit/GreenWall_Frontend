@@ -13,9 +13,7 @@ import AdminAplicatipon from "./admin/adminPanel/AdminAplicatipon.jsx";
 import ProectPost from "./admin/adminPanel/ProectPost.jsx";
 import ProductAdd from "./admin/adminPanel/ProductAdd.jsx";
 import PrivateRoute from "./admin/login/PrivateRoute.jsx";
-
-// Import RegisterModal — joylashuvini o'zingizga moslashtiring
-import RegisterModal from "./components/modal/RegisterModal";
+import RegisterModal from "./components/RegisterModal.jsx";
 
 const translations = {
   uz: {
