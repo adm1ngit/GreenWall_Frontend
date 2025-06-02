@@ -4,7 +4,7 @@ import Header from "./components/Header";
 import Main from "./components/main/Main";
 import SocialMediaIcons from "./components/SocialMedia";
 import ProductList from "./components/prodactList/prodactList";
-import FirstModal from "./components/modal/firstModal";
+import FirstModal from "./components/modal/FirstModal";
 import Login from "./admin/login/login.jsx";
 import AdminHome from "./admin/adminPanel/adminHome.jsx";
 import AdminAddProect from "./admin/adminPanel/AdminAddProect.jsx";
