@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import translations from "../main/translations";
-import translate from "../main/translate";
+import translate from "../main/trans";
 
 const FirstModal = ({ language }) => {
   const { state } = useLocation();
