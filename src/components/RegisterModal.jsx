@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import axios from "axios";
-import translations from "./main/translate";
+import translate from "./main/translate";
 
 const RegisterModal = ({ isOpen, onClose, language = "uz" }) => {
-  const t = translations[language];
+  const t = translate[language];
 
   const [formData, setFormData] = useState({
     name: "",
