@@ -13,50 +13,6 @@ import AdminAplicatipon from "./admin/adminPanel/AdminAplicatipon.jsx";
 import ProectPost from "./admin/adminPanel/ProectPost.jsx";
 import ProductAdd from "./admin/adminPanel/ProductAdd.jsx";
 import PrivateRoute from "./admin/login/PrivateRoute.jsx";
-import RegisterModal from "./components/RegisterModal.jsx";
-
-const translations = {
-  uz: {
-    title: "Ro'yxatdan o'tish",
-    name: "Ism",
-    surname: "Familiya",
-    phone: "Telefon raqam",
-    address: "Manzil",
-    submit: "Yuborish",
-    submitting: "Yuborilmoqda...",
-    close: "Yopish",
-    success: "Muvaffaqiyatli yuborildi!",
-    error_pdf: "PDF topilmadi.",
-    error_generic: "Xatolik yuz berdi. Iltimos qayta urinib ko‘ring.",
-  },
-  ru: {
-    title: "Регистрация",
-    name: "Имя",
-    surname: "Фамилия",
-    phone: "Телефон",
-    address: "Адрес",
-    submit: "Отправить",
-    submitting: "Отправка...",
-    close: "Закрыть",
-    success: "Успешно отправлено!",
-    error_pdf: "PDF не найден.",
-    error_generic: "Произошла ошибка. Пожалуйста, попробуйте снова.",
-  },
-  en: {
-    title: "Register",
-    name: "Name",
-    surname: "Surname",
-    phone: "Phone",
-    address: "Address",
-    submit: "Submit",
-    submitting: "Submitting...",
-    close: "Close",
-    success: "Successfully submitted!",
-    error_pdf: "PDF not found.",
-    error_generic: "An error occurred. Please try again.",
-  },
-};
-
 function App() {
   const [language, setLanguage] = useState(localStorage.getItem("language") || "ru");
   const [isAuthenticated, setIsAuthenticated] = useState(!!localStorage.getItem("token"));
@@ -72,24 +28,9 @@ function App() {
   };
 
   return (
-    <div className="bg-[#0C4840] text-white min-h-screen relative">
+    <div className="bg-[#0C4840] text-white">
       <Header language={language} setLanguage={setLanguage} />
       <SocialMediaIcons />
-
-      <button
-        onClick={() => setIsModalOpen(true)}
-        className="fixed bottom-5 right-5 bg-green-600 hover:bg-green-700 px-4 py-2 rounded shadow-lg z-50"
-      >
-        {translations[language].title}
-      </button>
-
-      {/* RegisterModal ni chaqirish */}
-      <RegisterModal
-        isOpen={isModalOpen}
-        onClose={() => setIsModalOpen(false)}
-        language={language}
-        translations={translations[language]} // Tarjimani uzatish
-      />
 
       <Routes>
         <Route path="/" element={<Main language={language} setLanguage={setLanguage} />} />
