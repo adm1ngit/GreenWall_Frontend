@@ -193,6 +193,45 @@ const translations = {
   
   },
 
-  
+  uz: {
+    title: "Ro‘yxatdan o‘tish",
+    name: "Ism",
+    surname: "Familiya",
+    phone: "Telefon",
+    address: "Manzil",
+    submit: "So‘rov Yuborish",
+    submitting: "Yuborilmoqda...",
+    close: "Yopish",
+    error_pdf: "PDF yuklab olishda xatolik yuz berdi.",
+    success: "Ro‘yxatdan o‘tish muvaffaqiyatli!",
+    error_generic: "Xatolik yuz berdi, ma’lumotlarni tekshirib qaytadan urinib ko‘ring.",
+  },
+  ru: {
+    title: "Регистрация",
+    name: "Имя",
+    surname: "Фамилия",
+    phone: "Телефон",
+    address: "Адрес",
+    submit: "Отправить запрос",
+    submitting: "Отправка...",
+    close: "Закрыть",
+    error_pdf: "Ошибка при загрузке PDF.",
+    success: "Регистрация прошла успешно!",
+    error_generic: "Произошла ошибка, пожалуйста, проверьте данные и попробуйте снова.",
+  },
+  en: {
+    title: "Registration",
+    name: "First Name",
+    surname: "Last Name",
+    phone: "Phone",
+    address: "Address",
+    submit: "Submit Request",
+    submitting: "Submitting...",
+    close: "Close",
+    error_pdf: "Error downloading PDF.",
+    success: "Registration successful!",
+    error_generic: "An error occurred. Please check your input and try again.",
+
+  },
 };
 export default translations;

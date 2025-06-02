@@ -1,7 +1,10 @@
 import React, { useState } from "react";
 import axios from "axios";
+import translations from "./translations"; // 🔁 Qo‘shildi
 
-const RegisterModal = ({ isOpen, onClose }) => {
+const RegisterModal = ({ isOpen, onClose, language = "uz" }) => {
+  const t = translations[language]; // 🔄 Tarjima tanlovi
+
   const [formData, setFormData] = useState({
     name: "",
     surname: "",
@@ -37,15 +40,15 @@ const RegisterModal = ({ isOpen, onClose }) => {
           link.click();
           document.body.removeChild(link);
         } else {
-          setError("PDF yuklab olishda xatolik yuz berdi.");
+          setError(t.error_pdf);
         }
 
-        alert("Ro‘yxatdan o‘tish muvaffaqiyatli!");
+        alert(t.success);
         onClose();
       }
     } catch (error) {
       console.error("❌ Xatolik:", error);
-      setError("Xatolik yuz berdi, ma’lumotlarni tekshirib qaytadan urinib ko‘ring.");
+      setError(t.error_generic);
     } finally {
       setLoading(false);
     }
@@ -57,7 +60,7 @@ const RegisterModal = ({ isOpen, onClose }) => {
     <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center">
       <div className="bg-[#1a1a1a] p-6 rounded-lg w-96">
         <h2 className="text-xl font-bold text-[#f1f1f1] text-center mb-4">
-          Ro‘yxatdan o‘tish
+          {t.title}
         </h2>
 
         {error && <p className="text-red-500 text-center">{error}</p>}
@@ -66,7 +69,7 @@ const RegisterModal = ({ isOpen, onClose }) => {
           <input
             type="text"
             name="name"
-            placeholder="Ism"
+            placeholder={t.name}
             value={formData.name}
             onChange={handleChange}
             className="w-full p-2 border border-gray-600 rounded bg-transparent text-[#f1f1f1] placeholder-gray-400"
@@ -75,7 +78,7 @@ const RegisterModal = ({ isOpen, onClose }) => {
           <input
             type="text"
             name="surname"
-            placeholder="Familiya"
+            placeholder={t.surname}
             value={formData.surname}
             onChange={handleChange}
             className="w-full p-2 border border-gray-600 rounded bg-transparent text-[#f1f1f1] placeholder-gray-400"
@@ -84,7 +87,7 @@ const RegisterModal = ({ isOpen, onClose }) => {
           <input
             type="text"
             name="phone"
-            placeholder="Telefon"
+            placeholder={t.phone}
             value={formData.phone}
             onChange={handleChange}
             className="w-full p-2 border border-gray-600 rounded bg-transparent text-[#f1f1f1] placeholder-gray-400"
@@ -93,7 +96,7 @@ const RegisterModal = ({ isOpen, onClose }) => {
           <input
             type="text"
             name="address"
-            placeholder="Manzil"
+            placeholder={t.address}
             value={formData.address}
             onChange={handleChange}
             className="w-full p-2 border border-gray-600 rounded bg-transparent text-[#f1f1f1] placeholder-gray-400"
@@ -105,7 +108,7 @@ const RegisterModal = ({ isOpen, onClose }) => {
             className="bg-green-600 text-white w-full p-2 rounded hover:bg-green-700 transition"
             disabled={loading}
           >
-            {loading ? "Yuborilmoqda..." : "So'rov Yuborish"}
+            {loading ? t.submitting : t.submit}
           </button>
         </form>
 
@@ -113,7 +116,7 @@ const RegisterModal = ({ isOpen, onClose }) => {
           onClick={onClose}
           className="mt-3 w-full bg-gray-500 text-white p-2 rounded hover:bg-gray-600 transition"
         >
-          Yopish
+          {t.close}
         </button>
       </div>
     </div>
