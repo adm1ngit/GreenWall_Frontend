@@ -100,21 +100,20 @@ function WhyChooseUs({ language }) {
             </h2>
 
             <motion.ul
-              className="mt-4 space-y-4 list-disc md:text-2xl text-lg font-bold md:m-6 md:pt-10"
+              className="list-none space-y-3 mt-4"
+              variants={variants}
               initial="hidden"
               animate={inView ? "visible" : "hidden"}
-              variants={variants}
-              transition={{ duration: 2, delay: 0.1 }}
+              transition={{ staggerChildren: 0.2}}
+
             >
               {filteredItems.map((item, index) => (
                 <motion.li
                   key={index}
-                  initial="hidden"
-                  animate={inView ? "visible" : "hidden"}
-                  variants={variants}
-                  transition={{ duration: 2, delay: 0.3 + index * 0.1 }}
+                  className="text-lg flex items-start gap-2"
                 >
-                  {item}
+                  <span className="text-green-600 text-xl">✅</span>
+                  <span>{item}</span>
                 </motion.li>
               ))}
             </motion.ul>
